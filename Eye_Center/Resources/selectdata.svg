@@ -1,0 +1,14 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" xml:space="preserve" id="Select_Data">
+  <style type="text/css">
+	.Blue{fill:#1177D7;}
+	.Black{fill:#727272;}
+	.Yellow{fill:#FFB115;}
+	.st0{opacity:0.5;}
+</style>
+  <path d="M8,8H0V2h8V8z M8,10H0v6h8V10z M18,2h-8v6h8V2z M18,10h-8v6h8V10z" fill="#FFB115" class="Yellow" />
+  <g opacity="0.5" class="st0">
+    <path d="M8,24H0v-6h8V24z M18,18h-8v6h8V18z M28,2h-8v6h8V2z M28,10h-8v6h8V10z" fill="#727272" opacity="0.5" class="Black" />
+  </g>
+  <path d="M20,32h-4v-6h4V32z M26,20h-4v12h4V20z M32,18h-4v14h4V18z" fill="#1177D7" class="Blue" />
+</svg>

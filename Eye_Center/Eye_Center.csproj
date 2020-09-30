@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D49336B5-B94C-4F27-9ED7-E3A9DE507671}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eye_Center</RootNamespace>
+    <AssemblyName>Eye_Center</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Backup_Restore_DB.cs" />
+    <Compile Include="BL\Cls_Biometry.cs" />
+    <Compile Include="BL\Cls_BondBook.cs" />
+    <Compile Include="BL\Cls_BondBookType.cs" />
+    <Compile Include="BL\Cls_Checked_Patient.cs" />
+    <Compile Include="BL\Cls_Clinic.cs" />
+    <Compile Include="BL\Cls_Follow_up.cs" />
+    <Compile Include="BL\Cls_Git_Max_id_For_Tables.cs" />
+    <Compile Include="BL\Cls_Global_Narcosis.cs" />
+    <Compile Include="BL\Cls_Lists.cs" />
+    <Compile Include="BL\Cls_Local_Narcosis.cs" />
+    <Compile Include="BL\Cls_Login.cs" />
+    <Compile Include="BL\Cls_Patient.cs" />
+    <Compile Include="BL\Cls_Post_Operative_Follow_up.cs" />
+    <Compile Include="BL\Cls_Priv.cs" />
+    <Compile Include="BL\Cls_Routine_Check.cs" />
+    <Compile Include="BL\Cls_Surgery.cs" />
+    <Compile Include="BL\Cls_SurgeryPrices.cs" />
+    <Compile Include="BL\Cls_Users.cs" />
+    <Compile Include="BL\SearchPatient.cs" />
+    <Compile Include="BL\UsersInfo.cs" />
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="Eye_CenterDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Eye_CenterDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Eye_CenterDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Biometry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Biometry.Designer.cs">
+      <DependentUpon>Biometry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Checked_Patient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Checked_Patient.Designer.cs">
+      <DependentUpon>Checked_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Follow_up.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Follow_up.Designer.cs">
+      <DependentUpon>Follow_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Global_Narcosis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Global_Narcosis.Designer.cs">
+      <DependentUpon>Global_Narcosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Local_Narcosis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Local_Narcosis.Designer.cs">
+      <DependentUpon>Local_Narcosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\My_Selected.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\My_Selected.Designer.cs">
+      <DependentUpon>My_Selected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Patient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Post_Operative_Follow_up.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Post_Operative_Follow_up.Designer.cs">
+      <DependentUpon>Post_Operative_Follow_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Routine_Check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Routine_Check.Designer.cs">
+      <DependentUpon>Routine_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SettingConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SettingConnection.Designer.cs">
+      <DependentUpon>SettingConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\SettingSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\SettingSystem.Designer.cs">
+      <DependentUpon>SettingSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Surgery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PL\Surgery.Designer.cs">
+      <DependentUpon>Surgery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RP\BONDCR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BONDCR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\BondDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BondDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\BondDateRP_After.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BondDateRP_After.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\DataSetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RP\DXPatient_Data.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\DXPatient_Data.Designer.cs">
+      <DependentUpon>DXPatient_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\File_Patient.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>File_Patient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\PatientDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\PatientDate.Designer.cs">
+      <DependentUpon>PatientDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\PatientDateL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\PatientDateL.Designer.cs">
+      <DependentUpon>PatientDateL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\PatientDateN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\PatientDateN.Designer.cs">
+      <DependentUpon>PatientDateN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\PatientRPDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientRPDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\Patient_data_Surg_type.cs">
+      <DependentUpon>Patient_data_Surg_type.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RP\Patient_data.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Patient_data.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\ViewRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\ViewRP.Designer.cs">
+      <DependentUpon>ViewRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\ViweReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\ViweReports.Designer.cs">
+      <DependentUpon>ViweReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\ViweReportsSurg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\ViweReportsSurg.Designer.cs">
+      <DependentUpon>ViweReportsSurg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\XtraForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\XtraForm2.Designer.cs">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PL\Biometry.resx">
+      <DependentUpon>Biometry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Checked_Patient.resx">
+      <DependentUpon>Checked_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Follow_up.resx">
+      <DependentUpon>Follow_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Global_Narcosis.resx">
+      <DependentUpon>Global_Narcosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Local_Narcosis.resx">
+      <DependentUpon>Local_Narcosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\My_Selected.resx">
+      <DependentUpon>My_Selected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Post_Operative_Follow_up.resx">
+      <DependentUpon>Post_Operative_Follow_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Routine_Check.resx">
+      <DependentUpon>Routine_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SettingConnection.resx">
+      <DependentUpon>SettingConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\SettingSystem.resx">
+      <DependentUpon>SettingSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Surgery.resx">
+      <DependentUpon>Surgery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RP\BONDCR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BONDCR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\BondDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BondDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\BondDateRP_After.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BondDateRP_After.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\DXPatient_Data.resx">
+      <DependentUpon>DXPatient_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\File_Patient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>File_Patient.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PatientDate.resx">
+      <DependentUpon>PatientDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PatientDateL.resx">
+      <DependentUpon>PatientDateL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PatientDateN.resx">
+      <DependentUpon>PatientDateN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PatientRPDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PatientRPDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\Patient_data_Surg_type.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Patient_data_Surg_type.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\Patient_data.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Patient_data.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\ViewRP.resx">
+      <DependentUpon>ViewRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\ViweReports.resx">
+      <DependentUpon>ViweReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\ViweReportsSurg.resx">
+      <DependentUpon>ViweReportsSurg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\XtraForm2.resx">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Eye_CenterDataSet1.xsc">
+      <DependentUpon>Eye_CenterDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet1.xss">
+      <DependentUpon>Eye_CenterDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet10.xsc">
+      <DependentUpon>Eye_CenterDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet10.xss">
+      <DependentUpon>Eye_CenterDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet11.xsc">
+      <DependentUpon>Eye_CenterDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet11.xss">
+      <DependentUpon>Eye_CenterDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet111.xsc">
+      <DependentUpon>Eye_CenterDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet111.xss">
+      <DependentUpon>Eye_CenterDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet2.xsc">
+      <DependentUpon>Eye_CenterDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet2.xss">
+      <DependentUpon>Eye_CenterDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet3.xsc">
+      <DependentUpon>Eye_CenterDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet3.xss">
+      <DependentUpon>Eye_CenterDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet4.xsc">
+      <DependentUpon>Eye_CenterDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet4.xss">
+      <DependentUpon>Eye_CenterDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet5.xsc">
+      <DependentUpon>Eye_CenterDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet5.xss">
+      <DependentUpon>Eye_CenterDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet6.xsc">
+      <DependentUpon>Eye_CenterDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet6.xss">
+      <DependentUpon>Eye_CenterDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet7.xsc">
+      <DependentUpon>Eye_CenterDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet7.xss">
+      <DependentUpon>Eye_CenterDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet8.xsc">
+      <DependentUpon>Eye_CenterDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet8.xss">
+      <DependentUpon>Eye_CenterDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet9.xsc">
+      <DependentUpon>Eye_CenterDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Eye_CenterDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Eye_CenterDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Eye_CenterDataSet9.xss">
+      <DependentUpon>Eye_CenterDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RP\DataSetReport.xsc">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="RP\DataSetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RP\DataSetReport.xss">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\addcheek.ico" />
+    <Content Include="Img\addpatient.ico" />
+    <Content Include="Img\backup.png" />
+    <Content Include="Img\backup_26854.ico" />
+    <None Include="Resources\actions_deletecircled.svg" />
+    <None Include="Resources\newtask.svg" />
+    <None Include="Resources\automaticupdates.svg" />
+    <None Include="Resources\bo_sale_item.svg" />
+    <None Include="Resources\showallsubtotalsattoppivottable.svg" />
+    <None Include="Resources\selectdata.svg" />
+    <None Include="Resources\financial.svg" />
+    <None Include="Resources\showgridlines.svg" />
+    <None Include="Resources\splitcells.svg" />
+    <None Include="Resources\undo.svg" />
+    <None Include="Resources\mergecells.svg" />
+    <None Include="Resources\٢شعار المركز1.png" />
+    <None Include="Img\_surgery2.png" />
+    <None Include="Img\_surgery.png" />
+    <None Include="Resources\٢شعار المركز.png" />
+    <None Include="Img\upperPanel.jpg" />
+    <None Include="Img\connection.png" />
+    <None Include="Img\enter %282%29.png" />
+    <None Include="Img\exit.png" />
+    <None Include="Img\enter.png" />
+    <None Include="Img\follow.png" />
+    <None Include="Img\follow up.png" />
+    <None Include="Img\cheek.png" />
+    <None Include="Img\content.png" />
+    <None Include="Img\content1.png" />
+    <Content Include="Img\login.ico" />
+    <Content Include="Img\LoginImage.png" />
+    <Content Include="Img\restore.png" />
+    <Content Include="Img\search.ico" />
+    <Content Include="Img\search_.ico" />
+    <None Include="Img\surgery.png" />
+    <Content Include="Img\up_cheek.ico" />
+    <Content Include="Img\up_patient.ico" />
+    <Content Include="Img\view.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

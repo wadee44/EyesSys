@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Eye_Center.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WADEE\SQLEXPRESS</Value>
+    </Setting>
+    <Setting Name="DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Eye_Center</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">wadee1</Value>
+    </Setting>
+    <Setting Name="UserPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123</Value>
+    </Setting>
+    <Setting Name="PathBuckUp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F:\BackUPEyeCenter</Value>
+    </Setting>
+    <Setting Name="Check" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Price_Chek" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="Eye_CenterConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)"> Server=ServerName; Database=DatabaseName; Integrated Security = false; USER ID=UserName; password=UserPassword;</Value>
+    </Setting>
+    <Setting Name="Eye_CenterConnectionString1" Type="System.String" Scope="User">
+      <Value Profile="(Default)"> Server=ServerName; Database=DatabaseName; Integrated Security = false; USER ID=UserName; password=UserPassword;</Value>
+    </Setting>
+    <Setting Name="localhost_Eye_Center_Connection4" Type="System.String" Scope="User">
+      <Value Profile="(Default)"> Server=ServerName; Database=DatabaseName; Integrated Security = false; USER ID=UserName; password=UserPassword;</Value>
+    </Setting>
+    <Setting Name="Less_disc" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
